@@ -13,6 +13,8 @@ eventually will be useable for all of the awesome applications your building.
   - [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))
   - [Linked List](https://en.wikipedia.org/wiki/Linked_list)
   - [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+  - [Dequeue](https://en.wikipedia.org/wiki/Double-ended_queue)
+    + pronounced *deck*
   - [Priority Queue](https://en.wikipedia.org/wiki/Priority_queue)
   - [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
 

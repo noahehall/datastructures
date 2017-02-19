@@ -14,7 +14,7 @@ export default class Stack extends List {
     push = this.append;
 
   // READ
-    get top() { return this.length }
+    get empty() { return !this.length }
 
     // get current element, but dont remove it
     peek = () => this.getCurrentElement();
