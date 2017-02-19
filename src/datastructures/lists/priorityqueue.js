@@ -26,10 +26,12 @@ export default class PQueue extends Queue {
   // DELETE
     dequeue = () => {
       let highestPriority = this.first;
-      this.forEach((el, index) => {
+      if (!this.first) return false;
+
+      this.forEach((el) => {
         if (el.p > highestPriority.p) highestPriority = el;
       })
 
-      return highestPriority || false;
+      return this.remove(highestPriority, true);
     };
 }
