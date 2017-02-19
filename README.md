@@ -19,7 +19,4 @@ eventually will be useable for all of the awesome applications your building.
   - [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
 
 ## Coming soon
-  - [Dictionary](http://www.introprogramming.info/tag/dictionary-data-structure/)
-  - [Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type))
-  - [Binary Tree](https://en.wikipedia.org/wiki/Binary_tree)
-  - [Graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
+  - my plan is to implement all [data structures](https://en.wikipedia.org/wiki/List_of_data_structures) not provided by javascript
