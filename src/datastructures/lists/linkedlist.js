@@ -1,5 +1,5 @@
 /**
- * LinkedList, page 73, 81, 83
+ * LinkedList + Doubly Linked List, page 73, 81, 83
  */
 export default class LinkedList {
   constructor () {
