@@ -17,19 +17,18 @@ export default class Dictionary {
   // READ
   find = (key) => this.dataStore[key];
 
-  displayObject = () => {
+  getKeys = () => Object.keys(this.dataStore);
+
+  asObject = () => {
     const object = {};
-    for (let key in this.dataStore)
-      object[key] = this.dataStore[key];
+    this.getKeys().forEach((key) => object[key] = this.dataStore[key])
 
     return object;
   }
 
-  displayValuesSorted = () => {
+  sortedValues = (sortFunc = undefined) => {
     const array = [];
-    for (let key in Object.keys(this.dataStore).sort()) {
-      array.push(this.dataStore[key]);
-    }
+    this.getKeys().sort(sortFunc).forEach((key) => array.push(this.dataStore[key]));
 
     return array;
   }
@@ -38,12 +37,18 @@ export default class Dictionary {
 
   // DELETE
   remove = (key) => {
-    delete this.dataStore[key];
-    --this.size;
-    return this;
+    if (this.dataStore[key]) {
+      delete this.dataStore[key];
+      --this.size;
+
+      return this;
+    }
+
+    return false;
   }
 
   clear = () => {
+    if (this.size < 1) return false;
     this.dataStore = new BaseArray();
     this.size = 0;
 
