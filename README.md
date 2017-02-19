@@ -15,3 +15,9 @@ eventually will be useable for all of the awesome applications your building.
   - [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
   - [Priority Queue](https://en.wikipedia.org/wiki/Priority_queue)
   - [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+
+## Coming soon
+  - [Dictionary](http://www.introprogramming.info/tag/dictionary-data-structure/)
+  - [Sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type))
+  - [Binary Tree](https://en.wikipedia.org/wiki/Binary_tree)
+  - [Graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
