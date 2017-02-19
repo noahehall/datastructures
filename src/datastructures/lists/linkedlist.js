@@ -1,9 +1,9 @@
 /**
- * LinkedList + Doubly Linked List, page 73, 81, 83
+ * LinkedList + Doubly Linked List + circular linked list, page 73, 81, 83
  */
 export default class LinkedList {
   constructor () {
-    this.head = {element: 'LinkedListHead', next: null, previous: null}
+    this.head = {element: 'LinkedListHead', next: null, previous: null};
     this.length = 0;
     this.position = 0;
     this.current = this.head;
@@ -32,16 +32,16 @@ export default class LinkedList {
         : item;
     }
 
-    findFirst = (item = this.head) => {
-      return item.next
-        ? item.next
+    findFirst = () => {
+      return this.length > 0
+        ? this.head.next
         : false;
     }
 
-    display = (items = [], next = this.head) => {
+    display = (items = [], next = this.head, elementOnly = true) => {
       if (!this.length || !next.next) return items;
 
-      items.push(next.next.element);
+      items.push( elementOnly ? next.next.element : next.next);
       return this.display(items, next.next);
     }
 
@@ -67,7 +67,8 @@ export default class LinkedList {
 
     next = () => {
       if (this.current.next) {
-        ++this.position;
+        if (this.position === this.length) this.position = 0;
+        else ++this.position;
         this.current = this.current.next;
 
         return this.current;
@@ -78,7 +79,8 @@ export default class LinkedList {
 
     previous = () => {
       if (this.current.previous) {
-        --this.position;
+        if (this.position === 0) this.position = this.length;
+        else --this.position;
         this.current = this.current.previous;
 
         return this.current;
@@ -90,7 +92,8 @@ export default class LinkedList {
     remove = (item) => {
       if (!this.length) return false;
       const thisNode = this.find(item);
-      if (thisNode && thisNode.next) {
+      if (thisNode && thisNode !== this.head) {
+        if (thisNode === this.current) this.current = this.current.previous;
         thisNode.previous.next = thisNode.next || null;
         thisNode.next.previous = thisNode.previous;
         thisNode.next = null;

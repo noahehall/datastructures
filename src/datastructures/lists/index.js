@@ -3,6 +3,7 @@ import Stack from './stack.js';
 import Queue from './queue.js';
 import PQueue from './priorityqueue.js';
 import LinkedList from './linkedlist.js';
+import CircularLinkedList from './circularlinkedlist.js';
 
 export default {
   List,
@@ -10,4 +11,5 @@ export default {
   Queue,
   PQueue,
   LinkedList,
+  CircularLinkedList,
 }
