@@ -22,6 +22,7 @@ eventually will be useable for all of the awesome applications your building.
     + pronounced *deck*
   - [Priority Queue](https://en.wikipedia.org/wiki/Priority_queue)
   - [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+  - [Dictionary](http://www.introprogramming.info/tag/dictionary-data-structure/)
 
 ## Coming soon
   - my plan is to implement all [data structures](https://en.wikipedia.org/wiki/List_of_data_structures) not provided by javascript
