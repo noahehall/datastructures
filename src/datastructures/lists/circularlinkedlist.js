@@ -1,5 +1,9 @@
 import LinkedList from './linkedlist.js';
 
+/**
+ * creates a circular linked list
+ * see datastructures and algorithms in javascript page 85
+ */
 export default class CircularLinkedList extends LinkedList {
   constructor() {
     super();
