@@ -34,6 +34,9 @@ circ.insert('5','4');
 var dict = new ds.dicts.Dictionary();
 dict.add('name','noah');
 
+var hash = new ds.hash.HashTable();
+hash.put('noah', 'hall');
+
 console.dir([
   'testds',
   twod.constructor,
@@ -80,5 +83,8 @@ console.dir([
   dict.size,
   dict.remove(4),
   dict.remove('name'),
-  dict.clear()
+  dict.clear(),
+  'hash table',
+  hash.showDistro(),
+  hash.getValue('noah'),
 ]);
