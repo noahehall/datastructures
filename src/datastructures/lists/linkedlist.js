@@ -1,9 +1,9 @@
 /**
- * LinkedList + Doubly Linked List, page 73, 81, 83
+ * LinkedList + Doubly Linked List + circular linked list, page 73, 81, 83
  */
 export default class LinkedList {
   constructor () {
-    this.head = {element: 'LinkedListHead', next: null, previous: null}
+    this.head = {element: 'LinkedListHead', next: null, previous: null};
     this.length = 0;
     this.position = 0;
     this.current = this.head;
