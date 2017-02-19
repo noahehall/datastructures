@@ -25,11 +25,15 @@ linkedList.insert('hall');
 var dict = new ds.dicts.Dictionary();
 
 var circ = new ds.lists.CircularLinkedList();
-circ.insert('noah');
-circ.insert('hall');
-circ.insert('edward', 'noah');
+circ.insert('1');
+circ.insert('2');
+circ.insert('3');
+circ.insert('4');
+circ.insert('6');
+circ.insert('5','4');
 
 console.dir([
+  'testds',
   ds,
   twod.calculateRowStats(false),
   twod.calculateColumnStats(),
@@ -54,12 +58,20 @@ console.dir([
   linkedList.findFirst(),
   linkedList.insert('super', 'edward').display(),
   'circular',
-  circ.length,
-  circ.position,
-  circ.current,
-  circ.displayR(),
+  //circ.display(),
+  //circ.displayR(),
+  //circ.findLast(),
+  //circ.find('1'),
+  //circ.findFirst(),
+  //circ.current,
+  //circ.advance(),
+  //circ.advance(4),
+  //circ.advance(-20),
+  //circ.position,
+  //circ.current,
+  circ.advance(3),
+  circ.remove('3'),
+  circ.remove('4'),
   circ.display(),
-  circ.find('blah'),
-  circ.findFirst(),
-
+  circ.current,
 ]);

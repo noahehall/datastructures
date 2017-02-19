@@ -67,7 +67,8 @@ export default class LinkedList {
 
     next = () => {
       if (this.current.next) {
-        ++this.position;
+        if (this.position === this.length) this.position = 0;
+        else ++this.position;
         this.current = this.current.next;
 
         return this.current;
@@ -78,7 +79,8 @@ export default class LinkedList {
 
     previous = () => {
       if (this.current.previous) {
-        --this.position;
+        if (this.position === 0) this.position = this.length;
+        else --this.position;
         this.current = this.current.previous;
 
         return this.current;
@@ -90,7 +92,8 @@ export default class LinkedList {
     remove = (item) => {
       if (!this.length) return false;
       const thisNode = this.find(item);
-      if (thisNode && thisNode.next) {
+      if (thisNode && thisNode !== this.head) {
+        if (thisNode === this.current) this.current = this.current.previous;
         thisNode.previous.next = thisNode.next || null;
         thisNode.next.previous = thisNode.previous;
         thisNode.next = null;
