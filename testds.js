@@ -27,6 +27,7 @@ var dict = new ds.dicts.Dictionary();
 var circ = new ds.lists.CircularLinkedList();
 circ.insert('noah');
 circ.insert('hall');
+circ.insert('edward', 'noah');
 
 console.dir([
   ds,
@@ -56,6 +57,9 @@ console.dir([
   circ.length,
   circ.position,
   circ.current,
-  circ.display()
+  circ.displayR(),
+  circ.display(),
+  circ.find('blah'),
+  circ.findFirst(),
 
 ]);

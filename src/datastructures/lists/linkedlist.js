@@ -32,16 +32,16 @@ export default class LinkedList {
         : item;
     }
 
-    findFirst = (item = this.head) => {
-      return item.next
-        ? item.next
+    findFirst = () => {
+      return this.length > 0
+        ? this.head.next
         : false;
     }
 
-    display = (items = [], next = this.head) => {
+    display = (items = [], next = this.head, elementOnly = true) => {
       if (!this.length || !next.next) return items;
 
-      items.push(next.next.element);
+      items.push( elementOnly ? next.next.element : next.next);
       return this.display(items, next.next);
     }
 
