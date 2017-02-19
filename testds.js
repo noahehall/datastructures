@@ -24,6 +24,10 @@ linkedList.insert('hall');
 
 var dict = new ds.dicts.Dictionary();
 
+var circ = new ds.lists.CircularLinkedList();
+circ.insert('noah');
+circ.insert('hall');
+
 console.dir([
   ds,
   twod.calculateRowStats(false),
@@ -48,7 +52,10 @@ console.dir([
   linkedList.find('bam'),
   linkedList.findFirst(),
   linkedList.insert('super', 'edward').display(),
-'dict',
-dict
+  'circular',
+  circ.length,
+  circ.position,
+  circ.current,
+  circ.display()
 
 ]);
