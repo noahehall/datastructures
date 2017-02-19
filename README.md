@@ -4,7 +4,9 @@ current focus is data structures, then i'll swing back to [algorithms](https://g
 
 eventually will be useable for all of the awesome applications your building.
 
-want to contribute? read our [contribution guidelines](https://github.com/noahehall/datastructures/blob/master/CONTRIBUTING.md)
+## Want to contribute?
+  1. read our [code of conduct](https://github.com/noahehall/datastructures/blob/master/CODE_OF_CONDUCT.md)
+  2. read our [contribution guidelines](https://github.com/noahehall/datastructures/blob/master/CONTRIBUTING.md)
 
 - `$ npm run start`
 
