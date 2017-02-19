@@ -37,6 +37,12 @@ dict.add('name','noah');
 var hash = new ds.hash.HashTable();
 hash.put('noah', 'hall');
 
+
+var one = new ds.sets.Set([1,3,5]);
+var second = new Set([2,1,3,5])
+
+var set = one.subset(second);
+
 console.dir([
   'testds',
   twod.constructor,
@@ -87,4 +93,6 @@ console.dir([
   'hash table',
   hash.showDistro(),
   hash.getValue('noah'),
+  'sets',
+  set,
 ]);
