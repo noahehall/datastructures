@@ -1,8 +1,8 @@
-data structures implemented in javascript
+Data structures implemented in the latest javascript, designed for isomorphic and progressive web applications.
 
 current focus is data structures, then i'll swing back to [algorithms](https://github.com/noahehall/algorithms)
 
-eventually will be useable for all of the awesome applications your building.
+Beta release will be useable for all of the awesome applications your building.
 
 ## Want to contribute?
   1. read our [code of conduct](https://github.com/noahehall/datastructures/blob/master/CODE_OF_CONDUCT.md)
@@ -23,6 +23,7 @@ eventually will be useable for all of the awesome applications your building.
   - [Priority Queue](https://en.wikipedia.org/wiki/Priority_queue)
   - [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
   - [Dictionary](http://www.introprogramming.info/tag/dictionary-data-structure/)
+  - [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)
 
 ## Coming soon
-  - my plan is to implement all [data structures](https://en.wikipedia.org/wiki/List_of_data_structures) not provided by javascript
+  - my plan is to implement the Abstract Data Type for [data structures](https://en.wikipedia.org/wiki/List_of_data_structures) not provided by or not fully implemented by javascript
