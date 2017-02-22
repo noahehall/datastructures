@@ -4,11 +4,20 @@ current focus is data structures, then i'll swing back to [algorithms](https://g
 
 Beta release will be useable for all of the awesome applications your building.
 
+# You need this if
+  1. Efficiency at scale is a priority for your application and shaving 5ms from your in-app processes is critical for your user experience
+  2. Your application requires efficient searching, insertion, and/or retrieval
+  3. Your application stores complex data in state
+  4. Your application ingest and store large data sets in-app which are frequently accessed and updated (e.g. data visualizations using [D3 v4](https://github.com/noahehall/reactjs-d3-universal))
+  5. Immutable data types are important
+
 ## Want to contribute?
   1. read our [code of conduct](https://github.com/noahehall/datastructures/blob/master/CODE_OF_CONDUCT.md)
   2. read our [contribution guidelines](https://github.com/noahehall/datastructures/blob/master/CONTRIBUTING.md)
-
-- `$ npm run start`
+  3. start coding!
+    - clone
+    - install
+    - `$ npm run start`
 
 ## Current datastructures
   - [Recap of all implemented datastructures](https://github.com/noahehall/theBookOfNoah/blob/master/_datastructures.md)
