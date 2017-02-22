@@ -43,6 +43,13 @@ var second = new Set([2,1,3,5])
 
 var set = one.subset(second);
 
+var tree = new ds.trees.BinarySearch();
+tree.add(40);
+tree.add(25);
+tree.add(78);
+tree.add(10);
+tree.add(32);
+
 console.dir([
   'testds',
   twod.constructor,
@@ -95,4 +102,12 @@ console.dir([
   hash.getValue('noah'),
   'sets',
   set,
+  ' trees',
+  tree,
+  tree.inOrder(),
+  tree.preOrder(),
+  tree.postOrder(),
+  tree.getMin(),
+  tree.getMax(),
+  tree.root.right
 ]);
